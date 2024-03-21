@@ -27,7 +27,7 @@ import jakarta.validation.Valid;
 public class DemoController {
     
 	@Autowired
-	depService depService;
+	DepService depService;
 	
 	
 	
