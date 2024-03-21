@@ -29,12 +29,12 @@ public class DemoController {
 	@Autowired
 	DepService depService;
 	
-	
+
 	
 	
 	@PostMapping("/saveDept")
 	public Department name(@Valid @RequestBody Department department) {
-		System.err.println(a+"lll");
+		 
 		Department department2 = depService.saveDept(department);
 		 return department2;
 	}
