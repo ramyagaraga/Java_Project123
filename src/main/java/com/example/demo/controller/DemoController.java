@@ -1,6 +1,6 @@
 package com.example.demo.controller;
 
-import java.security.PublicKey;
+ 
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -17,8 +17,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.*;
 import com.example.demo.CustomException;
 import com.example.demo.Dto.Department;
-import com.example.demo.service.DepService;
-import com.github.andrewoma.dexx.collection.List;
+import com.example.demo.service.DepService; 
 
 import jakarta.validation.Valid;
 
@@ -33,7 +32,7 @@ public class DemoController {
 	
 	
 	@PostMapping("/saveDept")
-	public Department name( @RequestBody Department department) {
+	public Department name(@Valid @RequestBody Department department) {
 		 
 		Department department2 = depService.saveDept(department);
 		 return department2;
