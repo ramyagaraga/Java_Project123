@@ -16,8 +16,9 @@ import ch.qos.logback.classic.Logger;
 import lombok.extern.slf4j.Slf4j;
 
 
-@Service
+
 @Slf4j
+@Service
 public class DepService {
 
 	@Autowired

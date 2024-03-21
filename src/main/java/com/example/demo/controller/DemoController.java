@@ -27,10 +27,9 @@ import jakarta.validation.Valid;
 public class DemoController {
     
 	@Autowired
-	DepService depService;
+	depService depService;
 	
-	@Value("${server.port}")
-	int a;
+	
 	
 	
 	@PostMapping("/saveDept")
