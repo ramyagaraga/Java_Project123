@@ -33,7 +33,7 @@ public class DemoController {
 	
 	
 	@PostMapping("/saveDept")
-	public Department name(@Valid @RequestBody Department department) {
+	public Department name( @RequestBody Department department) {
 		 
 		Department department2 = depService.saveDept(department);
 		 return department2;
