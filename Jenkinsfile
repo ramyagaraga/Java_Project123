@@ -18,5 +18,13 @@ pipeline {
 
             }
         }
+        stage ('SonarQube Test') {
+            agent { label 'DOCKER' }
+            steps {
+                withSonarQubeEnv('SONAR_CLOUD') {
+                    sh 'mvn clean package sonar:sonar - Dsonar.organization=javaproject'
+                }
+            }
+        }
     }
 }
