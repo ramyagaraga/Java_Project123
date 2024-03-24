@@ -4,7 +4,7 @@ pipeline {
         stage ('Cloning git code') {
             agent { label 'DOCKER' }
             steps {
-                git url: 'https://github.com/SreekakulapuBharatkumar/Java_Project.git'
+                git url: 'https://github.com/SreekakulapuBharatkumar/Java_Project.git',
                     branch: 'master'
             }
         }
